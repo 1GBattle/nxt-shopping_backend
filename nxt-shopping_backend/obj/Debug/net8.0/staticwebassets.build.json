@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gvsuQ6gyiwbs6I8LI5oMB5IdUC4fjxAXcs6UlAKhPXg=",
+  "Source": "nxt-shopping_backend",
+  "BasePath": "_content/nxt-shopping_backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

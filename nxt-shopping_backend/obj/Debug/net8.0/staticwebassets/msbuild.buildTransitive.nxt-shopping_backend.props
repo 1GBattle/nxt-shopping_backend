@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\nxt-shopping_backend.props" />
+</Project>
