@@ -1,0 +1,6 @@
+@nxt_shopping_backend_HostAddress = http://localhost:5228
+
+GET {{nxt_shopping_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
