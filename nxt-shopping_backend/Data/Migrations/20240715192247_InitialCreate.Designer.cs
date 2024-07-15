@@ -10,7 +10,7 @@ using nxt_shopping_backend.Data;
 namespace nxt_shopping_backend.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240714161952_InitialCreate")]
+    [Migration("20240715192247_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -21,8 +21,9 @@ namespace nxt_shopping_backend.Data.Migrations
 
             modelBuilder.Entity("nxt_shopping_backend.Entities.Product", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Brand")
                         .HasColumnType("TEXT");
@@ -39,11 +40,11 @@ namespace nxt_shopping_backend.Data.Migrations
                     b.Property<long>("Price")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ProductType")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("QuanityInStock")
+                    b.Property<int>("QuantityInStock")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
